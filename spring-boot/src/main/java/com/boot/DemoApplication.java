@@ -20,7 +20,6 @@ public class DemoApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        ObjectMapper objectMapper = new ObjectMapper();
-        System.err.println(objectMapper.writeValueAsString(demoStarterProperties));
+        System.err.printf("ip = %s, port = %s", demoStarterProperties.getIp(), demoStarterProperties.getPort());
     }
 }
